@@ -1,4 +1,4 @@
-# payrobot - the C# library for the Payrobot
+# Payrobot C# SDK
 
 # Introduction
 Accept, store, send or forward Bitcoin, Litecoin and Bitcoin Cash for your website or app and protect your privacy.
