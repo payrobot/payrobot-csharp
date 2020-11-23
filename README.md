@@ -144,12 +144,12 @@ namespace Example
 
             Configuration.Default.BasePath = "https://api.payrobot.io";
             var apiInstance = new PaymentApi(Configuration.Default);
-            var currency = btc;  // string | Object Currency:   * `btc`: Bitcoin   * `ltc`: Litecoin   * `bch`: Bitcoin Cash 
+            var currency = "btc";  // string | Object Currency:   * `btc`: Bitcoin   * `ltc`: Litecoin   * `bch`: Bitcoin Cash 
             var type = 0;  // int | * `0: Receive and forward` payment is forwarded to a desired coin address once it's confirmed  * `1: Receive and store` payment is stored in a payrobot.io wallet 
-            var destination = bc1qzlza4ke65fa2sqacjfu5vtwy8ar6x8xttgk999;  // string | * For `Receive and forward` payment is the `ADDRESS` where the payment is going to be forwarded as soon as it's confirmed. **ADDRESS HAS TO BE OF THE SAME TYPE OF CURRENCY**  * For `Receive and store` payment is the payrobot.io `WALLET ID` where the payment is going to be stored as soon as it's confirmed. **WALLET HAS TO BE OF THE SAME TYPE OF CURRENCY** 
+            var destination = "bc1qzlza4ke65fa2sqacjfu5vtwy8ar6x8xttgk999";  // string | * For `Receive and forward` payment is the `ADDRESS` where the payment is going to be forwarded as soon as it's confirmed. **ADDRESS HAS TO BE OF THE SAME TYPE OF CURRENCY**  * For `Receive and store` payment is the payrobot.io `WALLET ID` where the payment is going to be stored as soon as it's confirmed. **WALLET HAS TO BE OF THE SAME TYPE OF CURRENCY** 
             var amount = 0.0129;  // decimal | Amount of the payment
-            var callback = https://your-callback-url.com;  // string | Your URL where payrobot.io will send the status of the payment (Webhook)
-            var reference = Bill123;  // string | Optional custom reference to identify the payment (optional) 
+            var callback = "https://your-callback-url.com";  // string | Your URL where payrobot.io will send the status of the payment (Webhook)
+            var reference = "Bill123";  // string | Optional custom reference to identify the payment (optional) 
 
             try
             {
